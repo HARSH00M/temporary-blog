@@ -7,7 +7,7 @@ export default function SingleBlog() {
   const [notFound, setNotFound] = useState(false)
 
   async function retrive(id){   
-    const res = await fetch(`http://localhost:5000/blogs/${id}`);
+    const res = await fetch(`${process.env.REACT_APP_URL}/blogs/${id}`);
     if(res.status === 404) {
       console.log("Blog not found")
       setNotFound(true)
