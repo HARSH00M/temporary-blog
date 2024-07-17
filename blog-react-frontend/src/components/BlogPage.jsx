@@ -17,7 +17,9 @@ export default function BlogPage() {
         async function fetchData(){
             try{
                 // const url = `http://localhost:5000/blogs/page=${currentPage}&limit=${pageSize}`;
-                let url = `http://localhost:5000/blogs`;
+                let url = `${process.env.REACT_APP_URL}/blogs`;
+
+                console.log(url)
                 
                 // if(selCat){
                 //     url+= `&category=${selCat}`
@@ -31,6 +33,7 @@ export default function BlogPage() {
             }
         }
         fetchData();
+        console.log(blogData);
         
     },[pageSize, selCat, currentPage])
 

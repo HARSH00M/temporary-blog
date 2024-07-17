@@ -10,7 +10,6 @@ import Home from './Home.jsx';
 import Contact from './pages/Contact.jsx';
 import About from './pages/About.jsx';
 import Banner from "./components/Banner";
-import Specificblog from "./pages/SpecificBlog";
 import SingleBlog from "./pages/SingleBlog";
 
 
@@ -19,7 +18,7 @@ function App() {
   return (
 
     <Routes>
-      <Route path="/" element={<Home/>}>
+      <Route element={<Home/>}>
         
       <Route path="/" element={<Banner/>} />
       <Route path="/contact" element={<Contact/>} />
