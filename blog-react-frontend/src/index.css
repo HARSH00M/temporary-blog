@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.active {
+    @apply text-indigo-400 underline underline-offset-8
+}
