@@ -4,7 +4,6 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function SideBar() {
 
-  const url = "https://localhost:5000/blogs";
 
   const [blogdata, setBlogData] = useState([]);
 
@@ -12,7 +11,7 @@ export default function SideBar() {
   useEffect(() => {
     async function fetchData() {
       try {
-        let url = `http://localhost:5000/blogs`;
+        let url = `${import.meta.env.VITE_URL}/blogs`;
 
 
         const res = await fetch(url);
