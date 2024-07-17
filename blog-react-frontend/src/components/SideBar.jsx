@@ -11,7 +11,7 @@ export default function SideBar() {
   useEffect(() => {
     async function fetchData() {
       try {
-        let url = `${process.env.VITE_URL}/blogs`;
+        let url = `${process.env.REACT_APP_URL}/blogs`;
 
 
         const res = await fetch(url);
