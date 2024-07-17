@@ -17,7 +17,7 @@ export default function BlogPage() {
         async function fetchData(){
             try{
                 // const url = `http://localhost:5000/blogs/page=${currentPage}&limit=${pageSize}`;
-                let url = `${import.meta.env.VITE_URL}/blogs`;
+                let url = `${process.env.VITE_URL}/blogs`;
                 console.log(url)
                 
                 // if(selCat){
