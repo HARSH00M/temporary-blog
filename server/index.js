@@ -8,15 +8,15 @@ const port = process.env.PORT || 5000;
 // middleware
 app.use(cors())
 app.use(express.json())
-app.use((req, res)=>{
-  res.sendFile(path.join(__dirname,".","dist","index.html"))
-  })  
+// app.use((req, res)=>{
+//   res.sendFile(path.join(__dirname,".","dist","index.html"))
+//   })  
 app.get('/', (req, res) => {
-  res.send("Blog server is running!")
+  res.json("Blog server is running!")
 });
 
 app.get('/blogs', (req, res) => {
-  res.send(blogs)
+  res.json(blogs)
 })
 app.get('/blogs/:id?', (req, res) => {
   const id = Number(req.params.id);
@@ -24,7 +24,7 @@ app.get('/blogs/:id?', (req, res) => {
   if(blog.length === 0) {
     res.status(404).send("Blog not found");
   }
-  res.send(blog)
+  res.json(blog)
 })
 
 app.listen(port, () => {
