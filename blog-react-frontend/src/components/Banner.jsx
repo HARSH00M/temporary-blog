@@ -10,7 +10,7 @@ export default function Banner() {
         </h1>
         <p className="lg:text-2xl lg:mx-24 font-medium">
           Dive into a captivating realm of thought-provoking articles, engaging
-          stories, and insightful perspectives. BlogHere
+          stories, and insightful perspectives. Cramitt
           <span className="text-indigo-400 font-bold">.in</span> is not just a
           platform; it's a community of passionate writers and avid readers who
           come together to share, learn, and inspire.

@@ -23,7 +23,7 @@ export default function Navbar() {
         <header className="top-0 right-0 left-0 block sticky">
             <nav className="bg-black flex flex-row gap-20 py-4 px-6 items-center justify-between">
 
-                <div className="text-2xl text-white font-bold font-serif">BlogHere<span className="text-indigo-400">.in</span>
+                <div className="text-2xl text-white font-bold font-serif">Cramitt<span className="text-indigo-400">.in</span>
                 </div>
 
                 {/* large device navigation bar */}
