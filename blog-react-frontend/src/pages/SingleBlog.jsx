@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { FaArrowRight } from "react-icons/fa";
-import { Link, useParams} from "react-router-dom";
-export default function SingleBlog({params}) {
+import { useParams} from "react-router-dom";
+export default function SingleBlog() {
   const id = useParams().id
 
   const [data, setData]= useState(null);

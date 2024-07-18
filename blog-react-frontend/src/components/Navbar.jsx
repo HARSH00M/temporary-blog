@@ -6,6 +6,7 @@ import { useState } from "react";
 export default function Navbar() {
     const navItems = [
         // {path: '/', link: 'Home'},
+        { path: '/', link: 'Home' },
         { path: '/services', link: 'Service' },
         { path: '/about', link: 'About' },
         { path: '/blogs', link: 'Blog' },
